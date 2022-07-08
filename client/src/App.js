@@ -1,6 +1,27 @@
 import React from "react";
 import axios from "axios";
 
+const { io } = require("socket.io-client");
+const SERVER_URL = "http://localhost:1337";
+const socket = io(SERVER_URL);
+
+//  wait until socket connects before adding event listeners
+socket.on("connect", () => {
+  console.log("connect success");
+  socket.on("category:create", (data) => {
+    console.log("create", data);
+  });
+  socket.on("case:update", (data) => {
+    console.log(data);
+  });
+  // socket.on('update', (data: any) => {
+  //   console.log(data);
+  // });
+  // socket.on('create', (data: any) => {
+  //   console.log(data);
+  // });
+});
+
 class App extends React.Component {
   constructor(props) {
     super(props);
