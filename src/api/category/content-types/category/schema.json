@@ -16,6 +16,12 @@
       "type": "string",
       "required": true,
       "unique": false
+    },
+    "restaurants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::restaurant.restaurant",
+      "inversedBy": "categories"
     }
   }
 }

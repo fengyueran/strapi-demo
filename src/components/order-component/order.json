@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_order_component_orders",
+  "info": {
+    "displayName": "Order",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "orderCreatedAt": {
+      "type": "biginteger"
+    },
+    "department": {
+      "type": "string"
+    },
+    "doctor": {
+      "type": "string"
+    }
+  }
+}

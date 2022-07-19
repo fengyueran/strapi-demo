@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cases",
+  "info": {
+    "singularName": "case",
+    "pluralName": "cases",
+    "displayName": "Case",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "caseID": {
+      "type": "string"
+    },
+    "PatientID": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "cases"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "ffrAccessionNumber": {
+      "type": "text"
+    },
+    "ctaAccessionNumber": {
+      "type": "text"
+    },
+    "caseOrigin": {
+      "type": "string"
+    },
+    "workflowID": {
+      "type": "uid",
+      "required": true
+    },
+    "uploadedAt": {
+      "type": "biginteger",
+      "required": true
+    },
+    "resultReturnedAt": {
+      "type": "biginteger"
+    },
+    "deadline": {
+      "type": "biginteger"
+    },
+    "narrowDegree": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isPositive": {
+      "type": "boolean",
+      "default": false
+    },
+    "dicomTag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dicom-tag-component.dicom-tag"
+    }
+  }
+}

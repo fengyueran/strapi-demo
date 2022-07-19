@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operators",
+  "info": {
+    "singularName": "operator",
+    "pluralName": "operators",
+    "displayName": "Operator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workflowID": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

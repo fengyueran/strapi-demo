@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dicom_tag_component_dicom_tags",
+  "info": {
+    "displayName": "DicomTag",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "StudyInstanceUID": {
+      "type": "string"
+    },
+    "StudyDate": {
+      "type": "string"
+    },
+    "PatientID": {
+      "type": "string"
+    },
+    "PatientSex": {
+      "type": "string"
+    },
+    "PatientAge": {
+      "type": "string"
+    },
+    "PatientName": {
+      "type": "string"
+    },
+    "PatientBirthDate": {
+      "type": "string"
+    },
+    "InstitutionName": {
+      "type": "string"
+    }
+  }
+}

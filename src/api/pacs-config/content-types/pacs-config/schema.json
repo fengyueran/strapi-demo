@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "pacs_configs",
+  "info": {
+    "singularName": "pacs-config",
+    "pluralName": "pacs-configs",
+    "displayName": "PacsConfig",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aec": {
+      "type": "json"
+    },
+    "aets": {
+      "type": "json"
+    }
+  }
+}
