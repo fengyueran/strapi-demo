@@ -7,7 +7,8 @@ module.exports = ({ env }) => ({
         cors: { origin: "http://localhost:3000", methods: ["GET"] },
       },
       contentTypes: {
-        category: "*", //["create", "update"]
+        category: "*", //["create", "update"],
+        case: ["create", "update"], //["create", "update"]
       },
       events: [
         {
